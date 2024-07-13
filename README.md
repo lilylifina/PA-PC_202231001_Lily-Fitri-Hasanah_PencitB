@@ -74,7 +74,7 @@ img_rotated = cv.warpAffine(img_rgb, M_rotation, (cols, rows))
 - `M_rotation = cv.getRotationMatrix2D(((cols-1)/2.0, (rows-1)/2.0), 45, 1)`: Menghitung matriks transformasi rotasi menggunakan `cv.getRotationMatrix2D()`. Pusat rotasi diatur di tengah gambar dengan sudut rotasi 45 derajat dan faktor skala 1.
   
 - `img_rotated = cv.warpAffine(img_rgb, M_rotation, (cols, rows))`: Menerapkan rotasi ke gambar menggunakan `cv.warpAffine()`, dengan menggunakan matriks rotasi `M_rotation` yang sudah dihitung sebelumnya.
-- 
+
 ### Resize Gambar
 
 ```python
